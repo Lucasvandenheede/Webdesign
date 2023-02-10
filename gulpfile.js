@@ -15,7 +15,7 @@ gulp.task('copy-js', () => {
     return gulp.src([
         'node_modules/bootstrap/dist/js/bootstrap.bundle.min.js',
     ])
-        .pipe(newer('./src/js'))
+        .pipe(newer('./dist/js'))
         .pipe(notify({message: 'Copy JS files'}))
         .pipe(gulp.dest('./dist/js'));
 });
